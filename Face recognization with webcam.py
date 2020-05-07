@@ -6,14 +6,14 @@ import face_recognition as fg
 
 os.chdir("C:/Users/abdul/OneDrive/Pictures/New folder")
 usama_img = fg.load_image_file("usama.jpg")
-junaid_img = fg.load_image_file("junaid.jpg")
-mufti_img = fg.load_image_file("mufti.jpg")
+aleem_img = fg.load_image_file("aleem.jpg")
+itachi_img = fg.load_image_file("itachi.jpg")
 
 usama_encoding = fg.face_encodings(usama_img)[0]
-junaid_encoding = fg.face_encodings(junaid_img)[0]
-mufti_encoding = fg.face_encodings(mufti_img)[0]
-known_encoding = [usama_encoding, junaid_encoding, mufti_encoding]
-known_img_name = ["Usama", "Junaid", "Mufti"]
+aleem_encoding = fg.face_encodings(aleem_img)[0]
+itachi_encoding = fg.face_encodings(aleem_img)[0]
+known_encoding = [usama_encoding, aleem_encoding, itachi_encoding]
+known_img_name = ["Usama", "aleem", "itachi"]
 face_locations = []
 face_encodings = []
 face_names = []
